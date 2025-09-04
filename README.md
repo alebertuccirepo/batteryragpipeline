@@ -15,21 +15,7 @@ Built with **LangChain**, **FAISS**, and **HuggingFace embeddings**, with both a
 - API server (`uvicorn src.serve:app --reload`) with `/query` endpoint
 
 ---
-## Roadmap (Future Additions)
 
-UI/UX: Add a lightweight UI for interactive querying
-
-Hybrid retrieval: Combine FAISS (dense) with BM25 (sparse) for better recall
-
-Configurable ingestion: YAML/JSON configs to set chunk size, embeddings model, filters
-
-Evaluation harness: Add unit tests with sample Q/A pairs for quality tracking
-
-Docker support: Containerize pipeline for easy setup and sharing
-
-Multi-modal ingestion: Support tables, figures, and CSV data alongside text
-
-Domain-specific finetuning: Experiment with finetuned LLMs on electrochemistry/battery
 ## Quickstart
 
 ### 1. Setup environment
@@ -47,4 +33,19 @@ python -m src.query "Explain SEI formation"
 bash
 Copy code
 uvicorn src.serve:app --reload
+```
+## Roadmap (Future Additions)
 
+UI/UX: Add a lightweight UI for interactive querying
+
+Hybrid retrieval: Combine FAISS (dense) with BM25 (sparse) for better recall
+
+Configurable ingestion: YAML/JSON configs to set chunk size, embeddings model, filters
+
+Evaluation harness: Add unit tests with sample Q/A pairs for quality tracking
+
+Docker support: Containerize pipeline for easy setup and sharing
+
+Multi-modal ingestion: Support tables, figures, and CSV data alongside text
+
+Domain-specific finetuning: Experiment with finetuned LLMs on electrochemistry/battery
